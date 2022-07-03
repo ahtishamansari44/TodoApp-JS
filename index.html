@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="container">
+            <div class="sec-todo">
+                <input type="text" placeholder="Enter Todo" id="todoInput" required />
+                <button onclick="AddTodo()"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="sec3">
+                <button onclick="AllDelete()" class="allDeleteBtn">Clear List</button>
+            </div>
+            <div class="sec-todo2">
+                <ul id="todoList">
+                    <li>Todo 1  <button class="close-btn" onclick="DeleteTodo(this)" ><i class="fa-solid fa-trash"></i></button> <button class="edite-btn" onclick="EditeTodo(this)" ><i class="fa-solid fa-pen-to-square"></i></button></li>
+                    <li>Todo 2  <button class="close-btn" onclick="DeleteTodo(this)"><i class="fa-solid fa-trash"></i></button> <button class="edite-btn" onclick="EditeTodo(this)" ><i class="fa-solid fa-pen-to-square"></i></button></li>
+                    <li>Todo 3  <button class="close-btn" onclick="DeleteTodo(this)" ><i class="fa-solid fa-trash"></i></button> <button class="edite-btn" onclick="EditeTodo(this)" ><i class="fa-solid fa-pen-to-square"></i></button></li>
+                </ul>
+
+            </div>
+        </div>
+        <h3>Muhammad Ahtisham Ansari</h3>
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
