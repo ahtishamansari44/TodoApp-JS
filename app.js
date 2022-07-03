@@ -39,7 +39,7 @@ el.parentNode.remove()
 function EditeTodo(el){
     var parent = el.parentNode;
     var updateData = prompt('Edite', parent.firstChild.data)
-    parent.firstChild.data =  updateData == null ?  parent.firstChild.data : updateData
+    parent.firstChild.data =  updateData == null || updateData == "" ?  parent.firstChild.data : updateData
 }
 
 // Delete All Todo
