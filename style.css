@@ -55,6 +55,9 @@
     margin: 0;
     border-bottom: 1px solid #00000042;
     padding: 16px 0;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .sec-todo2 ul li:nth-child(1) {
@@ -126,3 +129,9 @@ h3 {
     margin: 0 !important;
     font-family: monospace;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+  }
